@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'learning_logs',
     'users',
+    
+    # Apps de terceiros
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [
@@ -126,4 +129,12 @@ MAILERS = {
     'default': {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
+}
+
+# URL login page
+LOGIN_URL = '/users/login'
+
+# Bootstrap3
+BOOTSTRAP3 = {
+    'include_jquery': True,
 }
